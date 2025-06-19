@@ -18,7 +18,6 @@ jobs:
           VERSION="1.0.$GITHUB_RUN_NUMBER"
           echo "current version: $VERSION"
           PROJ="test"
-          sed -i "s|Current version:.*|Current version:$VERSION|" "$PROJ"
           sed -i "s|Current Version:.*|Current Version:$VERSION|" "$PROJ"
 
           git config --global user.name "$GITHUB_ACTOR"
